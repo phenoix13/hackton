@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Course Slider</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="body">
+        <div class="nav">
+            <div class="top"></div>
+            <nav>
+                <span class="left">DREAMS HACK</span>
+                <span><a href="#home">HOME</a></span>
+                <span><a href="#course">COURSE</a></span>
+                <span><a href="#contact">CONTACT</a></span>
+                <span><a href="#about">ABOUT</a></span>
+                <span><img src="logo.jpg" alt="logo"></span>
+            </nav>
+        </div>
+        <!----------------------------------home start-------------------------------->
+        <div class="home" id="home">
+            <div class="background">
+                <div class="home_par">
+                    <div class="con">
+                        <h4>THE GOAL OF EDUCATION IS THE ADVANCEMENT OF KNOWLEDGE</h4>
+                        <h2>TAKE THE FIRST STEP TO KNOWLEDGE WITH US</h2>
+                    </div>
+                    <div class="btn_course">
+                        <button>VIEW COURSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!----------------------------------home stop-------------------------------->
+        <!----------------------------------course start-------------------------------->
+        <div class="course" id="course">
+            <div class="background">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <div class="img">
+                                <img src="https://via.placeholder.com/600x400/FF5733/FFFFFF?text=Image+1" alt="Image 1">
+                            </div>
+                            <div class="topic">
+                                <p>It is BSc all department material is available. Please click the view button to visit there.</p>
+                                <button class="view"><a href="#">View</a></button>    
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="img">
+                                <img src="https://via.placeholder.com/600x400/33FF57/FFFFFF?text=Image+2" alt="Image 2">
+                            </div>
+                            <div class="topic">
+                                <p>It is BCom all department material is available. Please click the view button to visit there.</p>
+                                <button class="view"><a href="#">View</a></button>    
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="img">
+                                <img src="https://via.placeholder.com/600x400/3357FF/FFFFFF?text=Image+3" alt="Image 3">
+                            </div>
+                            <div class="topic">
+                                <p>It is BCA all department material is available. Please click the view button to visit there.</p>
+                                <button class="view"><a href="#">View</a></button>    
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="img">
+                                <img src="https://via.placeholder.com/600x400/3357FF/FFFFFF?text=Image+3" alt="Image 3">
+                            </div>
+                            <div class="topic">
+                                <p>It is BE all department material is available. Please click the view button to visit there.</p>
+                                <button class="view"><a href="#">View</a></button>    
+                            </div>
+                        </div>
+                    </div>
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>            
+            </div>    
+            <div class="con_over"></div>
+        </div>
+        <!----------------------------------course stop-------------------------------->
+        <!-------------------------contact start------------------------------------->    
+        <div class="contact" id="contact">
+            <div class="background">
+                <div class="form">
+                    <form id="reviewForm">
+                        <input type="text" placeholder="Enter the name" required id="name">
+                        <input type="email" placeholder="Enter the email id" required id="mail">
+                        <textarea name="review" placeholder="Enter the content" required id="message"></textarea>
+                        <div class="button">
+                            <button type="button" onclick="clearForm()">CLEAR</button>
+                            <button type="submit" onclick="submitForm(event)">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form_con">
+                    <div class="con_content">
+                        <p>
+                            Hai users ,I am a Team member of the ' DREAMS HACK ' in this project .If you have any trouble in this project or if you want tell your opinion for us .You can send your message for us and we will reply soon for your message.
+                        </p>
+                        <h3>THANK YOU!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="con_over"></div>
+        </div>
+        <!-------------------------contact stop------------------------------------->    
+        <!-------------------------about start------------------------------------->
+        <div class="about" id="about">
+            <div class="background">
+                <div class="ab_con">
+                    <div class="log">
+                        <img src="kasc logo.jpg" alt="KASC LOGO">
+                    </div>
+                    <div class="log_con">
+                        <h2>KASC COLLEGE</h2>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, amet dignissimos id error suscipit eveniet est corrupti sint quo temporibus deserunt voluptatum consectetur. Nisi totam odio consectetur assumenda debitis neque.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="con_over"></div>
+        </div>
+        <!-------------------------about stop------------------------------------->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

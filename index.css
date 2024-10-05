@@ -1,0 +1,833 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.body{
+    width: 100%;
+    height: 100%;
+}
+/*-------------------------nav start----------------------*/
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+}
+.nav .top{
+    height: 2rem;
+    background-color: black;
+}
+.nav nav{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+nav span{
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px 20px;
+}
+nav span a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav .left{
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-indent: 2px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+span img{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+}
+@media (min-width:780px) and (max-width:1200px){
+    .nav .top{
+        height: 1.5rem;
+    }    
+    nav span{
+        font-size: 1.7rem;
+        padding: 15px 10px;
+        margin: 15px 5px;
+    }
+    nav .left{
+        font-size: 1.8rem;
+    }
+}
+@media (min-width:461px) and (max-width:779px){
+    .nav .top{
+        height: 1rem;
+    }    
+    nav span{
+        font-size: 1rem;
+        padding: 15px 5px;
+        margin: 15px 3px;
+    }
+    nav .left{
+        font-size: 1.3rem;
+    }
+    span img{
+        width: 35px;
+        height: 35px;
+    }    
+}
+@media (max-width:460px){
+    .nav .top{
+        height: 1rem;
+    }    
+    nav span{
+        font-size: 0.8rem;
+        padding: 10px 4px;
+        margin: 10px 0px;
+    }
+    nav .left{
+        font-size: 0.8rem;
+    }
+    span img{
+        width: 25px;
+        height: 25px;
+    }    
+}
+
+/*-------------------------nav stop-----------------------*/
+
+/*-------------------------home start-----------------------*/
+
+.home{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+}
+.home .background{
+    width: 100%;
+    height: 100%;
+    background-image:url(home.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.background .home_par{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+}
+.home_par h4{
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    padding: 5px;
+    text-align: center;
+    color: cadetblue;
+}
+.home_par h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 5px;
+}
+.btn_course button{
+    padding: 10px;
+    background-color: teal;
+    font-size: 1.5rem;
+}
+.btn_course button:hover{
+    background-color: white;
+    color: black;
+}
+@media (min-width:840px) and (max-width:1200px){
+    .home{
+        width: 100%;
+        height: 75%;
+    }
+    .home_par h4{
+        font-size: 1.3rem;
+        margin: 0.8rem auto;
+    }
+    .home_par h2{
+        font-size: 2rem;
+        margin: 0.8rem auto;
+    }
+    .btn_course button{
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+}
+@media (min-width:461px) and (max-width:839px){
+    .home{
+        width: 100%;
+        height: 70%;
+    }
+    .home_par h4{
+        font-size: 0.8rem;
+        margin: 0.6rem auto;
+    }
+    .home_par h2{
+        font-size: 1.4rem;
+        margin: 0.6rem auto;
+    }
+    .btn_course button{
+        padding: 7px;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:460px){
+    .home{
+        width: 100%;
+        height: 65%;
+    }
+    .home_par h4{
+        font-size: 0.7rem;
+        margin: 0.5rem auto;
+    }
+    .home_par h2{
+        font-size: 1rem;
+        margin: 0.5rem auto;
+    }
+    .btn_course button{
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
+/*-------------------------home stop-----------------------*/
+
+/*-------------------------course start----------------------*/
+
+.course {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+}
+.course .con_over{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #333333a1;
+    z-index: 1;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    background-image:url(course.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    width: 40%;
+    height: 70%;
+    top: 8%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+}
+.slide .img{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+}
+.img img {
+    width: 80%;
+    height: 100%;
+}
+.slide .topic{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slide p {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view {
+    position: relative;
+    bottom: 5px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.view a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+@media (min-width:840px) and (max-width:1200px){
+    .course{
+        width: 100%;
+        height: 75%;
+    }
+    .slider {
+        width: 50%;
+        height: 53%;
+    }
+    .slide {
+        padding: 0.8rem;
+    }
+    .slide .img{
+        width: 100%;
+        height: 57%;
+    }
+    .img img {
+        width: 80%;
+        height: 90%;
+    }
+    .slide .topic{
+        height: 43%;
+    }
+    .slide p {
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: aqua;
+        padding: 6px;
+    }
+    .view {
+        padding: 8px 16px;
+    }
+    .view a {
+        font-size: 1.6rem;
+    }
+    .prev, .next {
+        font-size: 1.6rem;
+        padding: 8px;
+    }
+    .prev {
+        left: 8px;
+    }
+    .next {
+        right: 8px;
+    }
+}
+@media (min-width:461px) and (max-width:839px){
+    .course{
+        width: 100%;
+        height: 70%;
+    }
+    .slider {
+        width: 65%;
+        height: 60%;
+    }
+    .slide {
+        padding: 0.6rem;
+    }
+    .slide .img{
+        height: 65%;
+    }
+    .img img {
+        width: 80%;
+        height: 100%;
+    }
+    .slide .topic{
+        height: 40%;
+    }
+    .slide p {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 6px;
+        background-color: red;
+    }
+    .view {
+        padding: 6px 14px;
+    }
+    .view a {
+        font-size: 0.8rem;
+    }
+    .prev, .next {
+        font-size: 1.2rem;
+    }
+    .prev {
+        left: 6px;
+    }
+    .next {
+        right: 6px;
+    }
+}
+@media (max-width:460px){
+    .course{
+        width: 100%;
+        height: 65%;
+    }
+    .slider {
+        width: 75%;
+        height: 55%;
+    }
+    .slide {
+        padding: 0.4rem;
+    }
+    .slide .img{
+        height: 60%;
+    }
+    .img img {
+        width: 80%;
+        height: 95%;
+    }
+    .slide .topic{
+        height: 40%;
+    }
+    .slide p {
+        font-size: 0.9rem;
+        padding: 4px;
+        background-color: yellow;
+    }
+    .view {
+        padding: 4px 10px;
+    }
+    .view a {
+        font-size: 0.7rem;
+    }
+    .prev, .next {
+        font-size: 1rem;
+    }
+    .prev {
+        left: 6px;
+    }
+    .next {
+        right: 6px;
+    }
+}
+/*-------------------------------course stop--------------------*/
+
+/*-------------------------------contact start--------------------*/
+
+.contact{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    position: relative;
+}
+.contact .background{
+    width: 100%;
+    height: 100%;
+    background-image: url(contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .con_over{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background-color:black;
+    opacity: 0.7;
+    z-index: 0;
+}
+.background .form{
+    position: relative;
+    z-index: 1;
+    width: 40%;
+    height: 55%;
+    border-radius: 10px;
+    background-color: rgba(5, 43, 43, 0.445);
+    border: 2px solid white;
+    padding: 1rem;
+}
+.form form{
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form form input{
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+.form form textarea{
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    resize: none;
+}
+.form form .button{
+    width: 100%;
+    text-align: center;
+}
+.button button{
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.background .form_con{
+    width: 40%;
+    height: 70%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.form_con .con_content{
+    width: 100%;
+    height: 60%;
+    background-color:black;
+    border: 5px solid rgb(238, 236, 236);
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.con_content p{
+    font-size: 1.5rem;
+    text-indent: 30%;
+    text-align: justify;
+}
+.con_content h3{
+    font-size: 2rem;
+    padding: 10px;
+}
+@media (min-width:840px) and (max-width:1200px){
+    .contact{
+        height: 75%;
+    }
+    .background .form{
+        width: 40%;
+        height: 60%;
+        padding: 0.8rem;
+    }
+    .form form input,.form form textarea{
+        padding: 10px;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .form form textarea{
+        height: 45%;
+    }
+    .button button{
+        font-size: 0.8rem;
+        padding: 6px;
+        margin: 5px;
+    }
+    .background .form_con{
+        width: 40%;
+        height: 75%;
+    }
+    .form_con .con_content{
+        padding: 5px;
+    }
+    .con_content p{
+        font-size: 1.1rem;
+        text-indent: 20%;
+    }
+    .con_content h3{
+        font-size: 1.4rem;
+    }    
+}
+@media (min-width:461px) and (max-width:839px){
+    .contact{
+        height: 70%;
+    }
+    .background .form{
+        width: 50%;
+        height: 70%;
+        padding: 0.5rem;
+    }
+    .form form input,.form form textarea{
+        padding: 10px;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .form form textarea{
+        height: 45%;
+    }
+    .button button{
+        font-size: 0.8rem;
+        padding: 8px;
+        margin: 6px;
+    }
+    .background .form_con{
+        width: 47%;
+        height: 70%;
+        padding: 0.4rem;
+    }
+    .form_con .con_content{
+        padding: 5px;
+    }
+    .con_content p{
+        font-size: 0.8rem;
+        text-indent: 20%;
+    }
+    .con_content h3{
+        font-size: 1rem;
+    }
+}
+@media (max-width:460px){
+    .contact{
+        height: 65%;
+    }
+    .background .form{
+        width: 45%;
+        min-height: 40%;
+        padding: 0.4rem;
+    }
+    .form form input,.form form textarea{
+        padding: 5px;
+        font-size: 0.6rem;
+        margin-bottom: 0.3rem;
+        border-radius: 5px;
+    }
+    .form form textarea{
+        height: 45%;
+    }
+    .button button{
+        font-size: 0.5rem;
+        padding: 3px;
+        margin: 3px;
+    }
+    .background .form_con{
+        width: 45%;
+        height: 65%;
+    }
+    .form_con .con_content{
+        padding: 3px;
+    }
+    .con_content p{
+        font-size: 0.5rem;
+        text-indent: 20%;
+    }
+    .con_content h3{
+        font-size: 0.7rem;
+    }
+}
+/*-------------------------------contact stop--------------------*/
+
+/*-------------------------------about start--------------------*/
+
+.about{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    position: relative;
+}
+.about .background{
+    width: 100%;
+    height: 100%;
+    background-image: url(about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .con_over{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background-color:black;
+    opacity: 0.7;
+    z-index: 0;
+}
+.background .ab_con{
+    width: 90%;
+    height: 50%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.ab_con .log{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid snow;
+}
+.log img{
+    width: 80%;
+    height: 90%;
+    border-radius: 20%;
+}
+.ab_con .log_con{
+    width: 70%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.log_con h2{
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px;
+}
+.log_con p{
+    font-size: 1.5rem;
+    text-align: justify;
+    text-indent: 20%;
+}
+@media (min-width:840px) and (max-width:1200px){
+    .about{
+        height: 75%;
+    }
+    .background .ab_con{
+        width: 90%;
+        height: 40%;
+    }
+    .ab_con .log{
+        width: 30%;
+        height: 100%;
+        background-color: aqua;
+    }
+    .log img{
+        width: 90%;
+        height: 90%;
+    }
+    .ab_con .log_con{
+        width: 70%;
+        padding: 0.6rem;
+        color: white;
+    }
+    .log_con h2{
+        font-size: 2.5rem;
+        margin: 15px;
+    }
+    .log_con p{
+        font-size: 1.6rem;
+    }    
+}
+@media (min-width:461px) and (max-width:839px){
+    .about{
+        height: 70%;
+    }
+    .background .ab_con{
+        width: 90%;
+        height: 40%;
+    }
+    .ab_con .log{
+        width: 40%;
+        height: 100%;
+        background-color: red;
+    }
+    .log img{
+        width: 90%;
+        height: 90%;
+    }
+    .ab_con .log_con{
+        width: 60%;
+        padding: 0.6rem;
+        color: white;
+    }
+    .log_con h2{
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    .log_con p{
+        font-size: 1.1rem;
+    }    
+}
+@media (max-width:460px){
+    .about{
+        height: 65%;
+    }
+    .background .ab_con{
+        width: 95%;
+        height: 40%;
+    }
+    .ab_con .log{
+        width: 35%;
+        background-color:yellow;
+    }
+    .log img{
+        width: 90%;
+        height: 90%;
+    }
+    .ab_con .log_con{
+        width: 65%;
+        padding: 0.2rem;
+        color: white;
+    }
+    .log_con h2{
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+    .log_con p{
+        font-size: 0.8rem;
+    }    
+}
+/*-------------------------------about stop--------------------*/
