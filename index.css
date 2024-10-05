@@ -93,7 +93,7 @@ span img{
         height: 1rem;
     }    
     nav span{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding: 10px 4px;
         margin: 10px 0px;
     }
@@ -346,8 +346,6 @@ span img{
     }
     .slide p {
         font-size: 1.5rem;
-        text-align: center;
-        background-color: aqua;
         padding: 6px;
     }
     .view {
@@ -391,9 +389,7 @@ span img{
     }
     .slide p {
         font-size: 1.2rem;
-        text-align: center;
         padding: 6px;
-        background-color: red;
     }
     .view {
         padding: 6px 14px;
@@ -436,7 +432,6 @@ span img{
     .slide p {
         font-size: 0.9rem;
         padding: 4px;
-        background-color: yellow;
     }
     .view {
         padding: 4px 10px;
@@ -754,7 +749,6 @@ span img{
     .ab_con .log{
         width: 30%;
         height: 100%;
-        background-color: aqua;
     }
     .log img{
         width: 90%;
@@ -784,7 +778,6 @@ span img{
     .ab_con .log{
         width: 40%;
         height: 100%;
-        background-color: red;
     }
     .log img{
         width: 90%;
@@ -813,7 +806,6 @@ span img{
     }
     .ab_con .log{
         width: 35%;
-        background-color:yellow;
     }
     .log img{
         width: 90%;
