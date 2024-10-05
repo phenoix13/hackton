@@ -63,8 +63,8 @@ span img{
         height: 1.5rem;
     }    
     nav span{
-        font-size: 1.7rem;
-        padding: 15px 10px;
+        font-size: 1.5rem;
+        padding: 15px 5px;
         margin: 15px 5px;
     }
     nav .left{
@@ -77,7 +77,7 @@ span img{
     }    
     nav span{
         font-size: 1rem;
-        padding: 15px 5px;
+        padding: 15px 3px;
         margin: 15px 3px;
     }
     nav .left{
@@ -93,7 +93,7 @@ span img{
         height: 1rem;
     }    
     nav span{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding: 10px 4px;
         margin: 10px 0px;
     }
@@ -565,7 +565,7 @@ span img{
     }
     .background .form{
         width: 40%;
-        height: 60%;
+        height: 45%;
         padding: 0.8rem;
     }
     .form form input,.form form textarea{
@@ -574,7 +574,7 @@ span img{
         margin-bottom: 0.5rem;
     }
     .form form textarea{
-        height: 45%;
+        height: 35%;
     }
     .button button{
         font-size: 0.8rem;
@@ -582,17 +582,18 @@ span img{
         margin: 5px;
     }
     .background .form_con{
-        width: 40%;
-        height: 75%;
+        width: 45%;
+        height: 40%;
     }
     .form_con .con_content{
         padding: 5px;
     }
     .con_content p{
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-indent: 20%;
     }
     .con_content h3{
+        padding: 4px;
         font-size: 1.4rem;
     }    
 }
@@ -602,7 +603,7 @@ span img{
     }
     .background .form{
         width: 50%;
-        height: 70%;
+        height: 55%;
         padding: 0.5rem;
     }
     .form form input,.form form textarea{
@@ -611,7 +612,7 @@ span img{
         margin-bottom: 0.5rem;
     }
     .form form textarea{
-        height: 45%;
+        height: 35%;
     }
     .button button{
         font-size: 0.8rem;
@@ -620,7 +621,7 @@ span img{
     }
     .background .form_con{
         width: 47%;
-        height: 70%;
+        height: 60%;
         padding: 0.4rem;
     }
     .form_con .con_content{
@@ -631,6 +632,7 @@ span img{
         text-indent: 20%;
     }
     .con_content h3{
+        padding: 5px;
         font-size: 1rem;
     }
 }
